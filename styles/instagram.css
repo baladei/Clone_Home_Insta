@@ -165,3 +165,76 @@ body {
     width: 136px;
     height: 40px;
 }
+
+footer {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+}
+
+#footer-links {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#footer-links li {
+    margin-right: 10px;
+}
+
+#footer-links a,
+#copyright {
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+@media (max-width: 780px) {
+
+    #container {
+        margin-top: 10px;
+    }
+
+    #form-box,
+    #register-container,
+    #get-app-container {
+        width: 370px;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    #banner-container {
+        display: none;
+    }
+
+    #main-container,
+    #form-box {
+        margin-top: 0;
+    }
+
+    #form-container,
+    #form-box,
+    #register-container,
+    #get-app-container {
+        width: 100%;
+        border: none;
+    }
+
+    footer {
+        width: 90%;
+    }
+}
